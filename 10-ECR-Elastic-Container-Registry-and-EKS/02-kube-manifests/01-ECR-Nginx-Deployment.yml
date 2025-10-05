@@ -15,14 +15,14 @@ spec:
         app: kubeapp-ecr
     spec:
       containers:
-        - name: kubeapp-ecr
-          image: 180789647333.dkr.ecr.us-east-1.amazonaws.com/aws-ecr-kubenginx:1.0.0
-          resources:
-            requests:
-              memory: "128Mi"
-              cpu: "500m"
-            limits:
-              memory: "256Mi"
-              cpu: "1000m"
-          ports:
-            - containerPort: 80
+      - name: kubeapp-ecr
+        image: public.ecr.aws/d1g6b2t8/aws-ecr-kubenginx:1.0.0
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "500m"
+          limits:
+            memory: "256Mi"
+            cpu: "1000m"
+        ports:
+        - containerPort: 80
