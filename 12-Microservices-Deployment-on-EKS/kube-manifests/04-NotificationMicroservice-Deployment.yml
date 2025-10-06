@@ -15,17 +15,17 @@ spec:
         app: notification-restapp
     spec:
       containers:
-        - name: notification-service
-          image: stacksimplify/kube-notifications-microservice:4.0.0-AWS-XRay
-          ports:
-            - containerPort: 8096
-          imagePullPolicy: Always
-          env:
-            - name: AWS_MAIL_SERVER_HOST
-              value: "smtp-service"
-            - name: AWS_MAIL_SERVER_USERNAME
-              value: "AKIASUF7HC7SQJ6BCLVS"
-            - name: AWS_MAIL_SERVER_PASSWORD
-              value: "BARcmLiC68wgmhTy/cQvz/E8vFzeizGqdeASNtCs6+Nv"
-            - name: AWS_MAIL_SERVER_FROM_ADDRESS
-              value: "stacksimplify@gmail.com"
+      - name: notification-service
+        image: stacksimplify/kube-notifications-microservice:4.0.0-AWS-XRay
+        ports:
+        - containerPort: 8096
+        imagePullPolicy: Always
+        env:
+        - name: AWS_MAIL_SERVER_HOST
+          value: "smtp-service"
+        - name: AWS_MAIL_SERVER_USERNAME
+          value: "AKIA3OFVNHBH2GGEXZBB"
+        - name: AWS_MAIL_SERVER_PASSWORD
+          value: "BO7C8rkGYn1qi1X0pTDkmOZRSWarSWRvbarGeE8vWvrC"
+        - name: AWS_MAIL_SERVER_FROM_ADDRESS
+          value: "oluwole.willy@yahoo.com"
