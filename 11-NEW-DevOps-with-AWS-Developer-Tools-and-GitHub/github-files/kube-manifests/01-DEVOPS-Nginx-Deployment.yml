@@ -20,3 +20,11 @@ spec:
         #image: ghcr.io/stacksimplify/kube-nginxapp1:1.0.0 # FOR TESTING OR PRE-REQUISITE CHECKS
         ports:
         - containerPort: 80
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "500m"
+          limits:
+            memory: "256Mi"
+            cpu: "1000m"
+        imagePullPolicy: Always
